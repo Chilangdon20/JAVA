@@ -1,0 +1,65 @@
+import java.util.Scanner;
+ public class Sistema{
+  public static void main(String args[]){
+
+   Scanner entrada = new Scanner(System.in);
+   String nombre = "";
+   int key = 0 , ant = 0;
+    
+    System.out.println("****************************************************");
+    System.out.println("*Bienvenido al sistema vacaional de DataDon company*");
+    System.out.println("****************************************************");
+    System.out.println(""); 
+    System.out.println(""); 
+
+    System.out.println("Cual es el nombre del empleado"); 
+    nombre = entrada.nextLine();
+    System.out.println(""); 
+
+    System.out.println("Cuanto tiempo de servicio tiene el empleado"); 
+    ant = entrada.nextInt();
+    System.out.println("");
+    
+  
+    System.out.println("Cual es el ID del empleado"); 
+    key = entrada.nextInt();
+    System.out.println("");
+
+    if(key == 1 ){
+   
+    if(ant ==1){
+     System.out.println(nombre + " tienes derecho a 6 dias de vacaiones"); 
+    } else if(ant >= 2 && ant <= 6){
+     System.out.println(nombre + "tienes derecho a 15 dias de vacaiones, disfrutalas"); 
+    }  else if(ant >= 7){
+     System.out.println(nombre  + "tienes derecho a 20 dias de vaciones, disfrutalas"); 
+    }
+  } 
+    else if(key == 2){
+    
+    if(ant ==1){
+     System.out.println(nombre + " tienes derecho a 7 dias de vacaiones"); 
+    } else if(ant >= 2 && ant <= 6){
+     System.out.println(nombre + "tienes derecho a 17 dias de vacaiones, disfrutalas"); 
+    }  else if(ant >= 7){
+     System.out.println(nombre  + "tienes derecho a 25 dias de vaciones, disfrutalas"); 
+    }
+  } 
+
+  }
+    else if(key == 3){
+
+
+    if(ant ==1){
+     System.out.println(nombre + " tienes derecho a 10 dias de vacaiones"); 
+    } else if(ant >= 2 && ant <= 6){
+     System.out.println(nombre + "tienes derecho a 20 dias de vacaiones, disfrutalas"); 
+    }  else if(ant >= 7){
+     System.out.println(nombre  + "tienes derecho a 35 dias de vaciones, disfrutalas"); 
+    }
+  } 
+   }else  {
+    System.out.println("Eroor! el ID es incorrecta"); 
+  }
+ } 
+}
