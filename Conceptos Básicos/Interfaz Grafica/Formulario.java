@@ -1,13 +1,13 @@
 import javax.swing.*;
 import java.awt.event.*;
 
-public class Suma extends JFrame implements ActionListener{
+public class Formulario extends JFrame implements ActionListener{
 
  private JTextField textfield1, textfield2;
  private JLabel label1, label2, label3;
  private JButton boton1;
 
- public Suma(){
+ public Formulario(){
   setLayout(null);
   label1 = new JLabel("Valor 1:");
   label1.setBounds(50,5,100,30);
@@ -49,7 +49,7 @@ public class Suma extends JFrame implements ActionListener{
  }
 
  public static void main(String args[]){
-  Suma formulario1 = new Suma();
+  Formulario formulario1 = new Formulario();
   formulario1.setBounds(0,0,300,150);
   formulario1.setVisible(true);
   formulario1.setResizable(false);
