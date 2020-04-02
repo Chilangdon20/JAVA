@@ -1,58 +1,49 @@
 import javax.swing.*;
-import java.awt.event.*;
+import javax.swing.event.*;
 
-public class Formulario extends JFrame implements ActionListener{
+public class Formulario extends JFrame implements ChangeListener{
 
- private JTextField textfield1, textfield2;
- private JLabel label1, label2, label3;
- private JButton boton1;
+  private JRadioButton radio1, radio2, radio3;
+  private ButtonGroup bg;
 
- public Formulario(){
-  setLayout(null);
-  label1 = new JLabel("Valor 1:");
-  label1.setBounds(50,5,100,30);
-  add(label1);
+  public Formulario(){
+    setLayout(null);
+    bg = new ButtonGroup();
+    radio1 = new JRadioButton("640*480");
+    radio1.setBounds(10,20,100,30);
+    radio1.addChangeListener(this);
+    add(radio1);
+    bg.add(radio1);
 
-  label2 = new JLabel("Valor 2:");
-  label2.setBounds(50,35,100,30);
-  add(label2);
+    radio2 = new JRadioButton("800*600");
+    radio2.setBounds(10,70,100,30);
+    radio2.addChangeListener(this);
+    add(radio2);
+    bg.add(radio2);
 
-  label3 = new JLabel("Resultado:");
-  label3.setBounds(120,80,100,30);
-  add(label3);
-
-  textfield1 = new JTextField();
-  textfield1.setBounds(120,10,150,20);
-  add(textfield1);
-
-  textfield2 = new JTextField();  
-  textfield2.setBounds(120,40,150,20);
-  add(textfield2);
-
-  boton1 = new JButton("Sumar");
-  boton1.setBounds(10,80,100,30);
-  add(boton1);
-  boton1.addActionListener(this);
- }
-
- public void actionPerformed(ActionEvent e){
-  if(e.getSource() == boton1){
-    int valor1 = 0, valor2 = 0, resultado = 0;
-    
-    valor1 = Integer.parseInt(textfield1.getText());
-    valor2 = Integer.parseInt(textfield2.getText());
-
-    resultado = valor1 + valor2;
-
-    label3.setText("Resultado: " + resultado);
+    radio3 = new JRadioButton("1024*768");
+    radio3.setBounds(10,120,100,30);
+    radio3.addChangeListener(this);
+    add(radio3);
+    bg.add(radio3);
   }
- }
 
- public static void main(String args[]){
-  Formulario formulario1 = new Formulario();
-  formulario1.setBounds(0,0,300,150);
-  formulario1.setVisible(true);
-  formulario1.setResizable(false);
-  formulario1.setLocationRelativeTo(null);
- }
+  public void stateChanged(ChangeEvent e){
+    if(radio1.isSelected()){
+       setSize(640,480);
+    }
+    if(radio2.isSelected()){
+       setSize(800,600);
+    }
+    if(radio3.isSelected()){
+       setSize(1024,768);
+    }
+  }
+
+  public static void main(String args[]){
+    Formulario formulario1 = new Formulario();
+    formulario1.setBounds(0,0,350,230);
+    formulario1.setVisible(true);
+    formulario1.setResizable(false);
+  }
 }
