@@ -5,9 +5,11 @@
 # Contenido 🤖
 
 * Curso basico.
- 
+  - Conceptos Basicos.
+  - Interfaz Grafica.
+  - Proyecto
 
-
+* Curso Intermedio.
 
 
 ## Construido con
