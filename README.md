@@ -6,7 +6,7 @@
 
 * Curso basico.
  
-* Proyecto Final.
+
 
 
 
