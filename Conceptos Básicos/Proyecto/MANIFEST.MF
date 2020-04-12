@@ -1,0 +1,5 @@
+//ARCHIVO DE MANIFESTO
+Manifest-Version: 1.0
+Created-By: Fernando Vazquez Sanchez.
+Main-Class: Bienvenida
+X-COMMENT: Proyecto Basico de la materia de programacion II en el lenguaje JAVA
