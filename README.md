@@ -1,6 +1,14 @@
+![Github License](https://img.shields.io/badge/LICENCE-MIT-red)
+![GitHub followers](https://img.shields.io/github/followers/Chilangdon20?color=Pink&label=Follow%21)
+![Linkedin](https://img.shields.io/badge/Social-Linkedin-9cf)
+<p align="center">
+  <a href="#">
+    <img src="https://user-images.githubusercontent.com/61173776/85869395-3a088800-b791-11ea-83a3-5855cfc1a321.jpeg" alt="Logo" width="150" height="150">
+  </a>
+
 # Lenguaje Java ☕
 
-> Este repositorio incluye material basico escrito con el lenguaje java.
+> Este repositorio incluye temas basicos escritos con el lenguaje java y un proyecto de JAVA.
 
 # Contenido 🤖
 
