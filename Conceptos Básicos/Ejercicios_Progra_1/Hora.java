@@ -29,8 +29,6 @@ public class Hora {
   String nombre = sc.nextLine();
   
   
-  
-  
   // Iniciamos condicional
   
   // Si la hora es menor que 12 imprime buenos dias
@@ -47,5 +45,6 @@ public class Hora {
   
   // Cualquier otro caso imprime buenas noches
   else System.out.println("Buenas noches " + nombre + ", hora de dormir: "+ hora + ":"+ minuto);
-  }
+	 
+    }
 }
