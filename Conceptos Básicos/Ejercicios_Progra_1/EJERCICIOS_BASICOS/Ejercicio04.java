@@ -5,10 +5,7 @@
 import java.time.*; 
 
 //Biblioteca para pedir datos al usuario
-import java.util.Scanner; 
-
-
-
+import java.util.Scanner;
 
 public class Main
 {
