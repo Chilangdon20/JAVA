@@ -7,11 +7,7 @@ import java.time.*;
 //Biblioteca para pedir datos al usuario
 import java.util.Scanner; 
 
-/* 
 
-Es importante mencionar que el nombre de la clase lo cambie.
-
-*/
 
 
 public class Main
