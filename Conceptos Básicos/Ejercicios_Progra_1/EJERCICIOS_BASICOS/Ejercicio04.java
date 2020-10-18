@@ -19,8 +19,9 @@ public class Cumple
 		
 		
         // Verificamos que cada componente de la fecha sea de tipo entero.		
-		if (year == (int)year & mes == (int)mes & dia == (int)dia) {
+		if (year == (int)year && mes == (int)mes && dia == (int)dia) {
 			
+		/*if (year == (int)year & mes == (int)mes & dia == (int)dia)*/	
 			
 				
 				// Entrada del usuario: aaaa-mm-dd
