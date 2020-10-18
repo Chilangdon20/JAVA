@@ -32,6 +32,6 @@ public class Main
 		// Aíslamos la cantidad de años para obtener el formato de edad adecuado
 		int edad  = Math.abs(dife.getYears()); 
      
-        System.out.println("La fecha  que ingresaste es: " + data + " al día de hoy tienes: " + edad + " años  adelante , la vida sigue."); // Print their age
+        System.out.println("La fecha  que ingresaste es: " + data + " al día de hoy tienes: " + edad + " años  adelante , la vida sigue."); 
 	}
 }
