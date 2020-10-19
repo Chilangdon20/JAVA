@@ -1,3 +1,10 @@
+/*  
+
+OBJETIVO:
+Ingresar una fecha en formato aaaa-mm-dd y regresar la edad desde la fecha dada. 
+
+*/
+
 package ejercicios;
 
 //Importo todos los elementos de la biblioteca time , esto para poder jugar con las fechas.
