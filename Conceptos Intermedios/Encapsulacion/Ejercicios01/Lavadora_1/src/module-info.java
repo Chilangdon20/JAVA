@@ -1,0 +1,2 @@
+module Lavadora_1 {
+}
