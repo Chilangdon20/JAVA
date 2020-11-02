@@ -1,20 +1,28 @@
 // Esta clase nos va a permitir crear la ventana principal del juego
 
 import javax.swing.JFrame;
-
-
 import java.awt.Canvas;
 import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.image.BufferStrategy;
 
-public class Ventana extends JFrame Runnable{
+
+public class Ventana extends JFrame implements  Runnable{
 	
 	// Estas dos variables son el tamaño que queremos que sea nuestra  ventana
-	public static final int WIDTH = 550 , HEIGHT = 650;
+	public static final int WIDTH = 850 , HEIGHT = 650;
 	
 	private Canvas canvas;
-	//Crearmos un constructor para inicializar los parametros generales de la ventana
-	
 	private Thread hilo; 
+	
+	// con este tipo de dato booleano lo usamos en nuestro ciclo while para mantener el estado del juegi
+	private boolean corriendo = false;
+	
+	// objetos para dibujar
+	private BufferStrategy bs;
+	private Graphics f;
+	
+	//Crearmos un constructor para inicializar los parametros generales de la ventana
 	public Ventana() {
 		
 		setTitle("FuncyScape");
@@ -52,34 +60,77 @@ public class Ventana extends JFrame Runnable{
 
 	public static void main(String[] args) {
 		
-		new Ventana();
-		
-
+		// lamamos al metodo start
+		new Ventana().start();
+		}
+	
+	// metodos de actualizar y dibujar
+	int x = 0;
+	private void actualizar(){
+		x++;
 	}
+	
+	private void dibujar() {
+		
+		bs = canvas.getBufferStrategy();
+		if(bs == null)
+		{
+			canvas.createBufferStrategy(3);
+			return;
+			
+		}
+		
+		f = bs.getDrawGraphics();
+	
+	    // -- empieza dibujo---
+		f.clearRect(0,0,WIDTH,HEIGHT);
+		f.drawRect(x,0,100,100);
+		
+		// -- termina dibujo---
+		f.dispose();
+		bs.show();
+		
+	}
+	
+	//-----------------------------
+	
 	
 	public void run() {
 		
-		
+		// ciclo while que se encarga de actualizar la poscicion de los objetos
+		while(corriendo) 
+		{
+			actualizar();
+			dibujar();
+		}
 		stop();
 		
 	}
 	
-	private void start() {
+	
+	// metodos para iniciar y detener el thread principal
+	
+    private void start() {
 		
+		// creamos un nuevo hilo para implemetnar la clase de la interfaz
 		hilo = new Thread(this);
 		hilo.start();
+		corriendo = true;
+		
+         
 		
 	}
 	
 	private void stop() {
-		
-		
-		hilo.join();
+		try {
+			hilo.join();
+			corriendo = false;
+		} catch (InterruptedException e) {
+		    e.printStackTrace();
+		}
 	}
 	
 	
-	// metodos para iniciar y terminar nuestro hilo
-	private void start();
-	private void stop();
+	
 
 }
