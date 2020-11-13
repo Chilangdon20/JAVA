@@ -2,9 +2,16 @@ package panaderia;
 
 public class Panaderia {
 
-	public Object getPanadero2() {
-		// TODO Auto-generated method stub
-		return null;
+	private String nombrePasteleria;
+	
+	
+
+	public String getNombrePasteleria() {
+		return nombrePasteleria;
+	}
+
+	public void setNombrePasteleria(String nombrePasteleria) {
+		this.nombrePasteleria = nombrePasteleria;
 	}
 
 }
