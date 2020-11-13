@@ -1,5 +1,7 @@
 package clasePOO;
 
+import javax.swing.JOptionPane;
+
 public class Alumno {
 	
 	// atributos
@@ -13,9 +15,22 @@ public class Alumno {
 	private Carrera carrera1;
 	private Carrera carrera2;
 	
+	// metodos
+
+	public void mostrarDatosAlumno() {
+		
+		// leva como argumento null 
+		JOptionPane.showMessageDialog(null,"Nombre: "+getNombre()
+		+"\nApellido Paterno: "+getApellidoP()
+		+"\nEdad: "+edad+"\nNo cuenta: "+getID()
+	    +"\nTurno: "+getTurno());
+		
+		carrera1.mostrarInfo();
+		
+		
+	}
 	
-	
-	// Get y sey
+	// Get y set
 	public String getApellidoP() {
 		return apellidoP;
 	}
@@ -67,6 +82,6 @@ public class Alumno {
 		this.turno = turno;
 	}
 	
-	// 
+	
 
 }

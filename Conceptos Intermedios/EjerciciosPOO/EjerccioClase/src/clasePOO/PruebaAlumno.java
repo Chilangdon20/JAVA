@@ -21,13 +21,17 @@ public class PruebaAlumno {
 		c.setSemestre(8);
 		c.setCarrera("MAC");
 		// tomamos los datos de la carrera
+		
 		alumno1.setCarrera1(c);
 		System.out.println(alumno1.getNombre()+ " " + alumno1.getApellidoM());
 		System.out.println(alumno1.getCarrera1().getSemestre());
+		c = new Carrera();
+	    alumno1.mostrarDatosAlumno();
+	    c.mostrarInfo();
 		
 		
 		/******************************/
-		
+	
 		
 		Alumno alumno2 = new Alumno();
 		alumno2.setNombre("Fer");
