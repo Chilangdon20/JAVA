@@ -9,7 +9,7 @@ public class Panadero {
 	private String apodo;
 	private String nombre;
 	private String rfc;
-	
+	private Pan panesSemana[][] = new Pan[5][7];
 	
 	// metodos
 	
@@ -20,9 +20,22 @@ public class Panadero {
 	 *   */
 	
 	
-	public void obtenerTotalPanElaborado() {
+	public Integer obtenerTotalPanElaborado() {
 		
-		private Pan panesSemana[][] = new Pan[5][7];
+		int i,j,suma=0;
+		for(i=0;i<=5;j++) {
+			for(j=0;j<=6;j++) {
+				
+				if(panesSemana[i][j]!=null) {
+					//obtenemos la cantidad elaborada de Pan
+					//recorremos cada posicion , extraemos la cantidad pan y la sumamos
+					suma=panesSemana[i][j].getCantidadElaborada();
+				}
+				
+				
+			}
+		}
+		return suma;
 		
 	}
 	
@@ -35,7 +48,21 @@ public class Panadero {
 	 * */
 	
 	
-	public void getVentasTotales() {
+	public double getVentasTotales() {
+		int i,j,suma=0;
+		for(i=0;i<=5;j++) {
+			for(j=0;j<=6;j++) {
+				
+				if(panesSemana[i][j]!=null) {
+					Pan panTmp = panesSemana[i][j];
+					suma+=panTmp.getCantidadVendida()*panTmp.getPrecio();
+				}
+				
+				
+			}
+		}
+		return suma;
+		
 		
 	}
 	
@@ -44,8 +71,17 @@ public class Panadero {
 	 * reportar la cantidad de pan que elabora por día
 	 * */
 	
-	public void mostrarPanesElaboradosXDia() {
-		
+	public Integer mostrarPanesElaboradosXDia(Integer dia) {
+		// Integer dias;
+		int i,suma=0;
+		for(i=0;i<=6;i++) {
+			if(panesSemana[i]!=null) {
+				Pan panTmp = panesSemana[i][dia];
+				suma+=panTmp.getCantidadElaborada();
+			}
+			
+		}
+		return suma;
 	}
 	
 	
@@ -66,6 +102,16 @@ public class Panadero {
 	}
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
+	}
+
+
+	public Pan[][] getPanesSemana() {
+		return panesSemana;
+	}
+
+
+	public void setPanesSemana(Pan panesSemana[][]) {
+		this.panesSemana = panesSemana;
 	}
 	
 		
