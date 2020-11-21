@@ -1,5 +1,7 @@
 package carrosEje;
 
+
+
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
 import java.awt.Font;
@@ -217,63 +219,63 @@ public class TallerMecanico extends JFrame {
 				auto.setPlacas("ABC-128");
 				auto.setCostoReparacion(1500);		
 				
-				auto.setFechaEntrada((java.sql.Date) s.parse("24/07/2020"));
+				auto.setFechaEntrada(s.parse("24/07/2020"));
 				
-				auto.setFechaSalida((java.sql.Date) s.parse("30/07/2020"));
+				auto.setFechaSalida(s.parse("30/07/2020"));
 				taller.getMecanico1().agregarAuto(auto);
 				
 				auto=new Auto();
 				auto.setPlacas("TBH-128");
 				auto.setCostoReparacion(2500);		
-				auto.setFechaEntrada((java.sql.Date) s.parse("24/10/2020"));
-				auto.setFechaSalida((java.sql.Date) s.parse("30/10/2020"));		
+				auto.setFechaEntrada(s.parse("24/10/2020"));
+				auto.setFechaSalida(s.parse("30/10/2020"));		
 				taller.getMecanico1().agregarAuto(auto);
 				
 				auto=new Auto();
 				auto.setPlacas("GTR-4581");
 				auto.setCostoReparacion(3200);		
-				auto.setFechaEntrada((java.sql.Date) s.parse("14/10/2020"));
-				auto.setFechaSalida((java.sql.Date) s.parse("30/10/2020"));		
+				auto.setFechaEntrada(s.parse("14/10/2020"));
+				auto.setFechaSalida(s.parse("30/10/2020"));		
 				taller.getMecanico1().agregarAuto(auto);
 				
 				auto=new Auto();
 				auto.setPlacas("FRE-2457");
 				auto.setCostoReparacion(1300);		
-				auto.setFechaEntrada((java.sql.Date) s.parse("21/10/2020"));
-				auto.setFechaSalida((java.sql.Date) s.parse("25/10/2020"));		
+				auto.setFechaEntrada(s.parse("21/10/2020"));
+				auto.setFechaSalida(s.parse("25/10/2020"));		
 				taller.getMecanico1().agregarAuto(auto);
 				
 				auto=new Auto();
 				auto.setPlacas("TRE-1453");
 				auto.setCostoReparacion(4500);		
-				auto.setFechaEntrada((java.sql.Date) s.parse("11/10/2020"));
-				auto.setFechaSalida((java.sql.Date) s.parse("25/10/2020"));		
+				auto.setFechaEntrada(s.parse("11/10/2020"));
+				auto.setFechaSalida(s.parse("25/10/2020"));		
 				taller.getMecanico1().agregarAuto(auto);
 				
 				auto=new Auto();
 				auto.setPlacas("BGH-9451");
 				auto.setCostoReparacion(1500);		
-				auto.setFechaEntrada((java.sql.Date) s.parse("09/10/2020"));
-				auto.setFechaSalida((java.sql.Date) s.parse("15/10/2020"));		
+				auto.setFechaEntrada(s.parse("09/10/2020"));
+				auto.setFechaSalida(s.parse("15/10/2020"));		
 				taller.getMecanico1().agregarAuto(auto);
 				
 				auto=new Auto();
 				auto.setPlacas("ASR-148");
 				auto.setCostoReparacion(2500);		
-				auto.setFechaEntrada((java.sql.Date) s.parse("14/11/2020"));
-				auto.setFechaSalida((java.sql.Date) s.parse("19/11/2020"));		
+				auto.setFechaEntrada(s.parse("14/11/2020"));
+				auto.setFechaSalida(s.parse("19/11/2020"));		
 				taller.getMecanico1().agregarAuto(auto);
 				
 				auto=new Auto();
 				auto.setPlacas("RDV-128");
 				auto.setCostoReparacion(2500);		
-				auto.setFechaEntrada((java.sql.Date) s.parse("18/11/2020"));
+				auto.setFechaEntrada(s.parse("18/11/2020"));
 				taller.getMecanico1().agregarAuto(auto);
 				
 				auto=new Auto();
 				auto.setPlacas("GTV-127");
 				auto.setCostoReparacion(3500);		
-				auto.setFechaEntrada((java.sql.Date) s.parse("15/11/2020"));
+				auto.setFechaEntrada(s.parse("15/11/2020"));
 				taller.getMecanico1().agregarAuto(auto);
 				
 				auto=null;
