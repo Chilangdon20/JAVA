@@ -194,7 +194,7 @@ public class TallerMecanico extends JFrame {
 				}
 			}
 		});
-		btnNewButton_5.setBounds(238, 170, 174, 29);
+		btnNewButton_5.setBounds(238, 170, 174, 29); 
 		contentPane.add(btnNewButton_5);
 		
 		JLabel lblNewLabel = new JLabel(sdf.format(new Date()));

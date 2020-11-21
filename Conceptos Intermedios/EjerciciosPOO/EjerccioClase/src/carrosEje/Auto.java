@@ -74,5 +74,4 @@ public class Auto {
 	public void setCostoReparacion(double costoReparacion) {
 		this.costoReparacion = costoReparacion;
 	}
-
 }
