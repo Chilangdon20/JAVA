@@ -1,5 +1,10 @@
 package carrosEje;
 
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.List;
+
 public class Taller {
 	
 	private String razonSocial;
@@ -10,6 +15,8 @@ public class Taller {
 	private Mecanico mecanico2;
 
 	private Mecanico mecanico3;
+	
+	private List<Auto> autos;
 	
 	
 	public Taller(String razonSocial,String direccion) {
@@ -23,6 +30,31 @@ public class Taller {
 		this.mecanico3=new Mecanico();
 		
 	}
+	
+	// metodo que consulta los autos en reparacion 
+	
+	
+	public ArrayList<Auto> consultaAutosEnReparacion(Mecanico mecanico) {
+		
+        ArrayList<Auto> autosReparados=new ArrayList<Auto>();
+    	
+    	Date hoy = new Date();
+    	
+    	
+    	for(Auto autoTemp : autos) {
+    		if(autoTemp.getFechaSalida()==null && autoTemp.getFechaSalida().before(hoy)) {
+    			autosReparados.add(autoTemp);
+    		}
+    	}
+    	
+    	return autosReparados;
+		
+	}
+	
+	
+	// metodos que calcuaelsalarioTotal
+	
+	
 	public String getRazonSocial() {
 		return razonSocial;
 	}

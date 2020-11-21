@@ -29,7 +29,7 @@ public class Panadero {
 				if(panesSemana[i][j]!=null) {
 					//obtenemos la cantidad elaborada de Pan
 					//recorremos cada posicion , extraemos la cantidad pan y la sumamos
-					suma=panesSemana[i][j].getCantidadElaborada();
+					suma+=panesSemana[i][j].getCantidadElaborada();
 				}
 				
 				

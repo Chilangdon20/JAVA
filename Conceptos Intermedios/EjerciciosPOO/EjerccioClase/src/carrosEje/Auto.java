@@ -48,7 +48,7 @@ public class Auto {
 		return fechaEntrada;
 	}
 	public void setFechaEntrada(Date fechaEntrada) {
-		this.fechaEntrada = fechaEntrada;
+		this.fechaEntrada=fechaEntrada;
 	}
 	public Date getFechaSalida() {
 		return fechaSalida;
