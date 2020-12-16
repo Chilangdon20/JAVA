@@ -1,6 +1,7 @@
 package Modelos;
 
 import java.awt.Color;
+
 import java.awt.Graphics;
 
 // Esta clase sera la implementacion grafica de nuestro asteroide por asi decirlo el frontend

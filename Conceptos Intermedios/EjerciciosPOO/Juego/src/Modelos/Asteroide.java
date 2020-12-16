@@ -4,8 +4,8 @@ public class Asteroide extends Coordenada{
 	
 	// atributos
 	
-	private float lado1=0;
-	private float lado2=0;
+	private float lado1;
+	private float lado2;
 	
 	
 	// constructor
@@ -43,7 +43,7 @@ public class Asteroide extends Coordenada{
 	// get ue recibe un entero el cual nos va a retornar los lados del asteroide mediante un if
 	public float Getlado(int lado)
 	{
-		if(lado ==1)
+		if(lado == 1)
 		{
 			return this.lado1;
 		}
@@ -52,7 +52,8 @@ public class Asteroide extends Coordenada{
 			return this.lado2;
 		}
 		
-		if(lado1 != 0 && lado !=1) {
+		if(lado != 1 && lado !=2) 
+		{
 			return 0;
 		}
 		return 0;

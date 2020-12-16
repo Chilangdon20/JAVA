@@ -7,6 +7,7 @@
 package Modelos;
 
 import java.awt.Color;
+
 import java.awt.event.*;
 
 import javax.swing.JFrame;
@@ -25,51 +26,30 @@ public class Ventana extends JFrame implements WindowListener{
 		
 		// recibimos los elemntos de la interfaz
 		addWindowListener(this);
-		setBackground(Color.white);
+		setBackground(Color.black);
 		
 	}
 
 	// como implementamos una interfaz necestiamos todos los metodos de windows listener
 	@Override
-	public void windowActivated(WindowEvent arg0) {
-		// TODO Auto-generated method stub
-		
-	}
+	public void windowActivated(WindowEvent arg0) {}
 
 	@Override
-	public void windowClosed(WindowEvent arg0) {
-		// TODO Auto-generated method stub
-		
-	}
+	public void windowClosed(WindowEvent arg0) {}
 
 	@Override
-	public void windowClosing(WindowEvent arg0) {
-		System.exit(0);
-		
-	}
+	public void windowClosing(WindowEvent arg0) {System.exit(0);}
 
 	@Override
-	public void windowDeactivated(WindowEvent arg0) {
-		// TODO Auto-generated method stub
-		
-	}
+	public void windowDeactivated(WindowEvent arg0) {}
 
 	@Override
-	public void windowDeiconified(WindowEvent arg0) {
-		// TODO Auto-generated method stub
-		
-	}
+	public void windowDeiconified(WindowEvent arg0) {}
 
 	@Override
-	public void windowIconified(WindowEvent arg0) {
-		// TODO Auto-generated method stub
-		
-	}
+	public void windowIconified(WindowEvent arg0) {}
 
 	@Override
-	public void windowOpened(WindowEvent arg0) {
-		// TODO Auto-generated method stub
-		
-	}
+	public void windowOpened(WindowEvent arg0) {}
 
 }

@@ -9,6 +9,7 @@ package Modelos;
 // importamos libreria necesaria
 
 import java.awt.*;
+
 import java.util.ArrayList;
 
 import javax.swing.JPanel;

@@ -27,7 +27,7 @@ public class Coordenada {
 	public Coordenada(float x,float y)
 	{
 		// nos retorna lasc oordenadas del usuario
-		this.x =x;
+		this.x = x;
 		this.y = y;
 	}
 	
@@ -62,7 +62,7 @@ public class Coordenada {
 	
 	public void setY(float y)
 	{
-		this.y = y;
+		this.x = y;
 	}
 	
 	
