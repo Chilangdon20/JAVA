@@ -47,14 +47,14 @@ public class Auto {
 	public Date getFechaEntrada() {
 		return fechaEntrada;
 	}
-	public void setFechaEntrada(Date fechaEntrada) {
-		this.fechaEntrada=fechaEntrada;
+	public void setFechaEntrada(java.util.Date date) {
+		this.fechaEntrada=(Date) date;
 	}
 	public Date getFechaSalida() {
 		return fechaSalida;
 	}
-	public void setFechaSalida(Date fechaSalida) {
-		this.fechaSalida = fechaSalida;
+	public void setFechaSalida(java.util.Date date) {
+		this.fechaSalida = (Date) date;
 	}
 	public String getDescripcionReparacion() {
 		return descripcionReparacion;

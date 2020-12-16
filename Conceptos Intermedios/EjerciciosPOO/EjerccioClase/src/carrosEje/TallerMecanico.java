@@ -174,7 +174,7 @@ public class TallerMecanico extends JFrame {
 					for(Auto a:taller.getMecanico1().mostrarAutosNoReparados()) {
 						autosNoReparados+="\n "+a.getPlacas()+" ingreso en "+sdf.format(a.getFechaEntrada());
 					}
-					JOptionPane.showMessageDialog(contentPane, sdf.format(new Date())+"\nAutos En Reparaci�n Mecanico "+taller.getMecanico1().getNombre()
+					JOptionPane.showMessageDialog(contentPane, sdf.format(new Date())+"\nAutos En Reparacion Mecanico "+taller.getMecanico1().getNombre()
 							+" <"+taller.consultaAutosEnReparacion(taller.getMecanico1()).size()+">"
 							+autosNoReparados);
 				}
