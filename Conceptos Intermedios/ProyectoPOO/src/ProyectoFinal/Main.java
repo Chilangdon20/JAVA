@@ -1,17 +1,18 @@
 
 /**
  *
- * @author fernandov
+ * @author EQUIPO FVE
  * 
  * CLASE MAIN
  * 
  * CLASE ENCARGADA DE ARRANCAR LA VENTAN DE NUESTRO JUEGO
  */
-package ProyectoFinal;
+package proyectoffinal;
+
+import proyectoffinal.InicioFrame;
 
 
 // IMPORTAMOS TODO EL PAQUETE PARA PODER USAR LAS CLASES
-import ProyectoFinal.InicioFrame;
 
 
 public class Main {

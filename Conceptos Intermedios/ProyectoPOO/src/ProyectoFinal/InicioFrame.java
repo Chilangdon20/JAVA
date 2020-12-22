@@ -1,8 +1,11 @@
 /**
  *
- * @author fernandov
+ * @author EQUIPO FVE
+ * 
+ * Clase encargada de generar los botones y componentes principales de nuestro
+ * videojuego
  */
-package ProyectoFinal;
+package proyectoffinal;
 
 
 public class InicioFrame extends javax.swing.JFrame {
@@ -84,7 +87,8 @@ public class InicioFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnJugarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJugarActionPerformed
-        // TODO add your handling code here:
+        /* Seccion encargada de pedir el nombre al usuario
+        Si ingresa los nombres POO o MAC o Matematicas le da atributos especiales al usuario*/
         String nombre = txtNombre.getText();
         if(nombre.length()==0){
             System.out.println("Ingresa tu nombre");
@@ -126,7 +130,7 @@ public class InicioFrame extends javax.swing.JFrame {
         }
         //</editor-fold>
 
-        /* Create and display the form */
+        /* Crea y muestra el formulario */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new InicioFrame().setVisible(true);

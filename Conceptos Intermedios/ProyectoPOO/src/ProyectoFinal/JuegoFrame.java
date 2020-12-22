@@ -1,4 +1,4 @@
-package ProyectoFinal;
+package proyectoffinal;
 
 /*
  * CLASE ENCARGADA DE CREAR EL FRAME PRINCIPAL 
@@ -7,7 +7,7 @@ DE NUESTRA CLASE
 
 /**
  *
- * @author fernandov
+ * @author EQUIPO FVE
  */
 public class JuegoFrame extends javax.swing.JFrame {
 

@@ -1,6 +1,6 @@
 /**
  *
- * @author fernandov
+ * @author EQUIPO FVE
  * CLASE juegopanel :
  * - ENCARGADA DE CREAR LAS NAVES ENEMIGAS
  * -  NAVE DE USUARIO
@@ -10,7 +10,7 @@
  * - colores de naves
  * 
  */
-package ProyectoFinal;
+package proyectoffinal;
 
 //-----LIBRERIAS-------------//
 import java.awt.Color;
@@ -524,6 +524,9 @@ public class JuegoPanel extends JPanel implements KeyListener{
         
     }
     public void perdistee(){
+        /*
+        Funcion encargada de reiniciar todos los atributos y las funciones
+        */
         level=1;
         puntos=100;
         bullet=15;
@@ -550,8 +553,15 @@ public class JuegoPanel extends JPanel implements KeyListener{
         
     }
 
+    /*
+    SECCION DE BOTONES
+    */
     @Override
     public void keyPressed(KeyEvent e) {
+        /*
+        seccion encargada de el moviemineto del usuario 
+        asi como de su actualizacion en caso de perder o ganar
+        */
         if(e.getKeyCode() == KeyEvent.VK_D){
             derNave=true;
             izquNave=false;
@@ -590,10 +600,16 @@ public class JuegoPanel extends JPanel implements KeyListener{
                 contRec=0;
         }
         
-        
+        /*
+        si el usuario presiona enter y nuestra variable acad es true entonces se reinicia el juego
+        */
         if(e.getKeyCode()==KeyEvent.VK_ENTER && acabad ==true){
             reiniciar();
         }
+        /*
+        Si el usuario presiona M y nuestravariable fin es true
+        entones mandamos a llamar a la funcion perdiste
+        */
         if(e.getKeyCode()==KeyEvent.VK_M && fin ==true){
             perdistee();
         }
