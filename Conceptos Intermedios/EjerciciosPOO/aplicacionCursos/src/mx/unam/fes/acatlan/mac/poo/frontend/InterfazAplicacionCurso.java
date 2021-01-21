@@ -1,7 +1,7 @@
 package mx.unam.fes.acatlan.mac.poo.frontend;
 
 import java.awt.BorderLayout;
-
+import java.awt.Component;
 import javax.swing.JFrame;
 
 public class InterfazAplicacionCurso extends JFrame {
@@ -23,6 +23,14 @@ public class InterfazAplicacionCurso extends JFrame {
 		setLocationRelativeTo(null);
 		setResizable(false);
 		setLayout(new BorderLayout());
+		
+		PanelDatos = new PanelDatos();
+		PanelRegistro = new PanelRegistro();
+		PanelNavegacion = new PanelNavegacion();
+		
+		add(PanelDatos,BorderLayout.NORTH);
+		add(PanelRegistro,BorderLayout.CENTER);
+		add(PanelNavegacion,BorderLayout.SOUTH);
 	}
 	
 	
